@@ -15,3 +15,11 @@ build:
         manual:
           - dest: .
             src: "src/**/*.ts"
+    - image: cesca2092/client
+      context: ../client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - dest: .
+            src: "**/*.js"
